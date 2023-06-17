@@ -10,7 +10,6 @@ export function Header() {
         <nav className="ml-auto text-sm font-medium space-x-6">
           <Link href="/">Home</Link>
           <Link href="/posts">Blog</Link>
-          <Link href="/projects">Projects</Link>
         </nav>
       </div>
     </header>

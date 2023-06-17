@@ -3,7 +3,9 @@ import { allPosts } from "@/.contentlayer/generated"
 
 export default function BlogPage() {
   return (
-    <div className="prose dark:prose-invert">
+    <div className="prose dark:prose-invert pt-5">
+      <h1>Blog</h1>
+
       {allPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
