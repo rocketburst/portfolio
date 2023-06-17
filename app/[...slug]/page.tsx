@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation"
 import { Metadata } from "next"
+import { notFound } from "next/navigation"
 import { allPages } from "contentlayer/generated"
 
 import { Mdx } from "@/components/mdx-components"
