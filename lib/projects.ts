@@ -12,8 +12,8 @@ export const projects = [
     link: "https://github.com/rocketburst/seoai/",
   },
   {
-    name: "SeoAI",
-    description: "The best way to manage SEO on your blog",
-    link: "https://github.com/rocketburst/seoai/",
+    name: "Portfolio",
+    description: "The minimal website you're looking at",
+    link: "https://github.com/rocketburst/portfolio/",
   },
 ] satisfies Project[]

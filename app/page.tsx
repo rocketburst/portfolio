@@ -6,6 +6,10 @@ import { BlogPostCard } from "@/components/blog-post-card"
 import { ProjectCard } from "@/components/project-card"
 
 export default function IndexPage() {
+  const recentPosts = allPosts
+    .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+    .slice(0, 4)
+
   return (
     <div className="pt-5 prose dark:prose-invert">
       <h1>Rayan Kazi</h1>
@@ -31,13 +35,13 @@ export default function IndexPage() {
       <h2>Blog</h2>
 
       <div className="space-y-3">
-        {allPosts.map((post) => (
+        {recentPosts.map((post) => (
           <BlogPostCard key={post._id} post={post} />
         ))}
       </div>
 
       <p className="not-prose flex items-center space-x-2">
-        <Link href="/blog" className="link">
+        <Link href="/posts" className="link">
           <span>All Posts --&gt;</span>
         </Link>
       </p>
