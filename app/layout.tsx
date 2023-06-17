@@ -3,7 +3,9 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 
 import { Analytics } from "@/components/analytics"
+import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
+import { Icons } from "@/components/icons"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -27,6 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="max-w-2xl mx-auto py-10 px-4">
             <Header />
             <main>{children}</main>
+            <Footer />
           </div>
           <Analytics />
         </ThemeProvider>
