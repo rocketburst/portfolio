@@ -7,7 +7,7 @@ export default function BlogPage() {
   )
 
   return (
-    <div className="prose dark:prose-invert pt-5">
+    <div className="prose dark:prose-invert">
       <h1>The Blog</h1>
       <p>Where I write about cool things 😊</p>
 

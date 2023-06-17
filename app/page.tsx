@@ -11,7 +11,7 @@ export default function IndexPage() {
     .slice(0, 4)
 
   return (
-    <div className="pt-5 prose dark:prose-invert">
+    <div className="prose dark:prose-invert">
       <h1>Rayan Kazi</h1>
       <p className="leading-loose text-sm md:text-base md:leading-loose">
         Hello there 👋 My name is Rayan Kazi aka rocketburst. I&apos;m a 16 y/o
