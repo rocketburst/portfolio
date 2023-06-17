@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link {
+    @apply underline decoration-neutral-300 underline-offset-4 transition-colors dark:decoration-neutral-600 focus:decoration-neutral-400 focus:outline-offset-8 focus:dark:decoration-neutral-500 hover:decoration-neutral-400 hover:dark:decoration-neutral-500;
+  }
+}

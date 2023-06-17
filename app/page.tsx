@@ -1,7 +1,11 @@
+import Link from "next/link"
+import { allPosts } from "@/.contentlayer/generated"
+
 import { projects } from "@/lib/projects"
+import { BlogPostCard } from "@/components/blog-post-card"
 import { ProjectCard } from "@/components/project-card"
 
-export default async function IndexPage() {
+export default function IndexPage() {
   return (
     <div className="pt-5 prose dark:prose-invert">
       <h1>Rayan Kazi</h1>
@@ -23,6 +27,20 @@ export default async function IndexPage() {
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>
+
+      <h2>Blog</h2>
+
+      <div className="space-y-3">
+        {allPosts.map((post) => (
+          <BlogPostCard key={post._id} post={post} />
+        ))}
+      </div>
+
+      <p className="not-prose flex items-center space-x-2">
+        <Link href="/blog" className="link">
+          <span>All Posts --&gt;</span>
+        </Link>
+      </p>
     </div>
   )
 }
