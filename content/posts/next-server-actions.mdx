@@ -50,7 +50,7 @@ npm i @prisma/client
 
 Now set up Vercel deployment for the project using the Vercel CLI by just typing in `vercel` to your terminal.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683431093412/3dea53dc-5b06-4417-8992-91831803a0b8.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683431093412/3dea53dc-5b06-4417-8992-91831803a0b8.png)
 
 ## Setting up the Database
 
@@ -58,7 +58,7 @@ Now let's set up the database. I'll show you how to use the new Vercel PostgreSQ
 
 Go to your project dashboard on Vercel and go to the storage tab. Then press the connect store button and create a new serverless PostgreSQL database.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683421413453/3c1c4d04-8043-4f09-98e6-afdaf7018472.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683421413453/3c1c4d04-8043-4f09-98e6-afdaf7018472.png)
 
 Once the database is created, go to the getting started tab and run the following commands in the terminal:
 
@@ -107,7 +107,7 @@ npx prisma generate
 
 The next step for the database is populating it with some data; you can do whatever you want (like making a script or manually doing it in the studio), but make sure the Book table has some values.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683432893488/8ad1063f-88bd-47da-b11f-34eb30091baf.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683432893488/8ad1063f-88bd-47da-b11f-34eb30091baf.png)
 
 The final step for the database is setting up the client. In the `src/app/` directory, create a `lib` folder and a file inside of it called `prisma.ts` and paste the following code:
 
@@ -182,7 +182,7 @@ export default async function Home() {
 
 You should have the following on your screen (the difference would be what you put in the database):
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683433450686/10b2a6c3-19be-4501-aad4-6637113d602d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683433450686/10b2a6c3-19be-4501-aad4-6637113d602d.png)
 
 The button with the text "Create a new book" right after the map function will allow the user to go to the edit page, where the magic behind server actions happens.
 
@@ -272,7 +272,7 @@ export default async function Edit() {
 
 It should look something like this:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683433828046/7e3f8b7f-d430-48ef-b668-4cf3939942e9.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683433828046/7e3f8b7f-d430-48ef-b668-4cf3939942e9.png)
 
 Now here is where the fun begins. To create a server action, create an asynchronous function with the `"use server"` directive at the top inside of the server component. Since we are using the action in a form, the argument will be of type `FormData`:
 
@@ -309,7 +309,7 @@ To invoke this server action, pass this function into the action prop of the for
 
 And just like that, we can now submit the form to add new books to our database!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683434338697/ce9a645e-01f5-40a0-9e8f-1f5bf6cb4c8b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1683434338697/ce9a645e-01f5-40a0-9e8f-1f5bf6cb4c8b.png)
 
 ## The Potential for Server Actions
 

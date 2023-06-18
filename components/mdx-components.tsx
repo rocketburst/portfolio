@@ -3,7 +3,7 @@ import { useMDXComponent } from "next-contentlayer/hooks"
 
 const components = {
   Image,
-}
+} as any
 
 interface MdxProps {
   code: string
