@@ -10,7 +10,7 @@ If you don't know, Web 3 is a new technology that is being used by the Ethereum 
 
 If you don't know what metamask is or you want to set up a wallet, check out their website [here](https://metamask.io/).
 
-# Setup
+## Setup
 
 1 - Create a new Next JS app
 
@@ -40,7 +40,7 @@ npm run dev # npm
 yarn dev # yarn
 ```
 
-# Setting up Moralis
+## Setting up Moralis
 
 Head to the [Moralis](https://moralis.io/) website and create an account or login. Go to the servers section on the sidebar and press the "Create a new Server button". In the drop down, select the test net server option.
 
@@ -58,9 +58,9 @@ Once the server is created, click the down arrow, and then click view details. Y
 
 <br />
 
-# Building the App
+## Building the App
 
-## Adding the Environment Variables
+### Adding the Environment Variables
 
 The Server URL and App ID need to be kept private, so create an `.env.local` file to store these variables in.
 
@@ -73,7 +73,7 @@ Replace these default values with the values you got from the server details on 
 
 There is a `NEXT_PUBLIC` before the `APP_ID` and `SERVER_URL` because we need to access these variables on the client and the server.
 
-## Adding The MoralisProvider
+### Adding The MoralisProvider
 
 Go to the `pages/_app.js` file and wrap the `<Component {...pageProps} />` with the `<MoralisProvider />` component as follows:
 
@@ -92,7 +92,7 @@ Be sure to import the `MoralisProvider` from react moralis.
 import { MoralisProvider } from "react-moralis"
 ```
 
-## Creating the Sign In Button
+### Creating the Sign In Button
 
 For this demonstration, I will be doing everything on the home page, but you can do it wherever it will suit your needs.
 
@@ -118,7 +118,7 @@ Now when we click the button, a popup will appear from the Metamask extension as
 
 ![metamask-auth-4.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1642558340831/aK_2PyjYv.png)
 
-## Creating the Sign Out Button
+### Creating the Sign Out Button
 
 There are some other things we need to use from the `useMoralis` hook.
 
@@ -140,7 +140,7 @@ We can use a ternary operator so that if the user is authenticated, a sign out b
 
 Now the registration is functional; now, lets look at how we can get some of the user's data.
 
-## Getting the User's Data
+### Getting the User's Data
 
 First, we need the `user` from the `useMoralis` hook:
 
@@ -162,7 +162,7 @@ You can use something like VSCode's IntelliSense or the Moralis documentation to
 
 We have to use a question mark for null safety. The username is indeed a random sequence of characters, but you can easily change it using another Moralis function.
 
-# Conclusion
+## Conclusion
 
 As you can see, it was that easy to implement authentication using Web 3.0 techonologies. I hope you found this tutorial useful, and please share with this people that might find this useful!
 

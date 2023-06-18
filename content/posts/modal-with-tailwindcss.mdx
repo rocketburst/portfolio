@@ -10,7 +10,7 @@ Hello, everyone. Creating and using modals is very important in many web applica
 
 ![Modal image](https://miro.medium.com/max/900/0*2x1dfdLxf0kOiqSA.gif)
 
-# Set Up & Clean Up
+## Set Up & Clean Up
 
 Create a new Next JS app with Tailwind CSS:
 
@@ -49,9 +49,9 @@ const HomePage = () => {
 }
 ```
 
-# Building the Modal
+## Building the Modal
 
-## Creating the Modal
+### Creating the Modal
 
 The first thing we should do is create a directory called `components` and create a new component for our modal. It would be best to name it `Modal.js`. Then inside the file create a new React functional component and export it (preferable use a [snippets extension](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets]).
 
@@ -73,7 +73,7 @@ Now we can render it in our `index.js` file:
 </div>
 ```
 
-## Using the `Dialog` Component
+### Using the `Dialog` Component
 
 Dialogs, a pre-built component that comes from Headless UI, will be the main tool we will use to build our modal. Dialogs are built using the `Dialog`, `Dialog.Overlay`, `Dialog.Title`, and `Dialog.Description` components. We first should build some state to track whether our Dialog is open or closed.
 
@@ -179,7 +179,7 @@ Here is how the modal button should look:
 
 ![Modal button](https://cdn.hashnode.com/res/hashnode/image/upload/v1646109217796/N4-xc55me.png)
 
-## Using `Transition` to make things fancier
+### Using `Transition` to make things fancier
 
 You can use the `Transition` component, that coincidentially also comes from Headless UI, to animate the opening and closing animations of the modal. First, you need to wrap the `Dialog` component in a `Transition` component. The `show` prop is basically the open state.
 
@@ -241,13 +241,13 @@ Next, wrap each section of content you want to animate in a `Transition.Child` c
 
 I think we've made a pretty fire modal if I do say so myself 🔥😁
 
-# Conclusion
+## Conclusion
 
 Using Tailwind CSS to build modals is quite easy with the Headless UI library. You can even use the hero icons library from the creators of Tailwind CSS to make the modal even better. I highly recommend that you use these libraries for complex apps and projects. I hope you found this article useful, and please share with anyone that needs it. Thanks for reading!
 
 Signing off 👋
 
-# Useful Links
+## Useful Links
 
 - [Code on Github](https://github.com/rkazi103/modal-tutorial) (the source code uses TypeScript, but there isn't a big difference)
 - [Headless UI Documentation](https://headlessui.dev/)

@@ -8,7 +8,7 @@ date: "2022-02-23"
 
 Fetching an API is a must-know for web developers in 2022 and beyond. In this article, we will learn how to fetch an API and get its data using Axios, a popular library for fetching APIs. We will also use React for our demo app.
 
-# Setup
+## Setup
 
 Create a new React app using Vite (pronounced like "veet"):
 
@@ -26,11 +26,11 @@ npm i axios # npm
 yarn add axios # yarn
 ```
 
-# Using Axios
+## Using Axios
 
 Axios is a promised based library, so you should know how to use promises and async/await. We will also be using the JSON placeholder API for this tutorial.
 
-## Getting Data
+### Getting Data
 
 The easiest way of fetching data from an API is just using the `get` method (for a GET request).
 
@@ -59,7 +59,7 @@ axios
   .then((data) => console.log(data))
 ```
 
-## Posting Data
+### Posting Data
 
 To send a POST request to an API, you can use the `post` method on the axios object. It takes the URL, the data you are posting, and a configuration object.
 
@@ -82,7 +82,7 @@ axios.post("<url>", data, {
 
 Now that you have a general idea on how to use Axios for some basic API requests, let's actually use the JSON placeholder API and display some data on the screen. If you want to learn more about Axios, head over to their documentation [here](https://axios-http.com/docs/intro).
 
-# Fetching the Data
+## Fetching the Data
 
 First, we need some state to track all of the todos we have (the API response).
 
@@ -108,7 +108,7 @@ useEffect(() => {
 }, [])
 ```
 
-# Typing the Data
+## Typing the Data
 
 > You can skip this part if you aren't using TypeScript, but the article will sometimes use TypeScript specific syntax; you can remove it, and it will be valid JavaScript.
 
@@ -141,7 +141,7 @@ await axios
 
 Now we our data is strictly typed. Let's display some of the it on the browser now!
 
-# Displaying the Data
+## Displaying the Data
 
 Displaying the data is actually quite simple. All we need to do is map through the array and display the elements in the fashion we want. I will just simply display all of them using an unordered list:
 

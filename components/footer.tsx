@@ -10,7 +10,9 @@ export function Footer() {
       <hr />
 
       <footer className="flex justify-between mt-6">
-        <p>Rayan Kazi</p>
+        <p>
+          <Link href="/">Rayan Kazi</Link>
+        </p>
 
         <div className="flex items-center space-x-4">
           <Link href="/rss.xml">

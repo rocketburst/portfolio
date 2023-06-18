@@ -8,7 +8,7 @@ date: "2022-01-22"
 
 Next JS has proven to be an awesome React framework that many developers now use. Combining this technology with TypeScript allows for a more robust developer experience. I'll show how to add TypeScript to your Next.js project and how to use it to add type-checking to your app.
 
-# Setting Up the App
+## Setting Up the App
 
 The best way to get started with Next JS and TypeScript is by using the `ts` flag when creating the project.
 
@@ -16,9 +16,9 @@ The best way to get started with Next JS and TypeScript is by using the `ts` fla
 npx create-next-app nextjs-typescript-demo --ts
 ```
 
-# Using Next JS's types
+## Using Next JS's types
 
-## Pages and Server Side Rendering
+### Pages and Server Side Rendering
 
 When you open up the `index.tsx` file, one of the things that has changed is that the pages are typed using the `NextPage` type that is imported from Next JS. You should do this whenever you create a new page.
 
@@ -65,7 +65,7 @@ const Home: NextPage<Props> = () => {
 }
 ```
 
-## Components
+### Components
 
 To build components that will be used inside of your app, you should use the `NextComponent` type. By default the component will be typed as `NextComponent<NextPageContext, {}, {}>` The third argument can be extended to type check your props:
 
@@ -81,7 +81,7 @@ const Dummy: NextComponentType<NextPageContext, {}, Props> = () => {
 }
 ```
 
-## API Routes
+### API Routes
 
 You can also type check your API routes by using Next.js's built in types.
 
@@ -108,11 +108,11 @@ export default function handler(
 }
 ```
 
-## Custom App and Next Config
+### Custom App and Next Config
 
 The `_app.js` and `next.config.js` files are also typed using the built in types. The `_app.js` is typed using the `AppProps` type and the `next.config.js` is typed using the `NextConfig` type.
 
-# Example: Fetching an API
+## Example: Fetching an API
 
 Lets fetch the JSON Placeholder API to get some posts and test our type checking skills. First in the `index.tsx` file, we will need to use the `getStaticProps` (because the API data doesnt't change) to get the data.
 
@@ -210,7 +210,7 @@ Now we can just display all the information:
 </div>
 ```
 
-# Conclusion
+## Conclusion
 
 Using TypeScript in any app allows for a more robust developer experience. Next JS makes no exception. i hope you learned a lot from this tutorial!
 
