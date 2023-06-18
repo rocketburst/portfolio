@@ -1,5 +1,14 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import { allPosts } from "@/.contentlayer/generated"
+
+export const metadata: Metadata = {
+  title: "rocketburst · blog",
+  description: "home of my personal website",
+  creator: "rocketburst",
+  robots: "index, follow",
+  viewport: { width: "device-width", initialScale: 1 },
+}
 
 export default function BlogPage() {
   const sortedPosts = allPosts.sort(

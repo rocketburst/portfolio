@@ -1,12 +1,14 @@
 import { allPosts } from "contentlayer/generated"
 import Rss from "rss"
 
+import { siteConfig } from "@/config/site"
+
 export function GET() {
   const feed = new Rss({
     title: "Rayan Kazi",
     description: "My personal website and blog",
-    feed_url: "https://portfolio-rocketburst.vercel.app/rss.xml",
-    site_url: "https://portfolio-rocketburst.vercel.app",
+    feed_url: `${siteConfig.url}/rss.xml`,
+    site_url: `${siteConfig.url}`,
     language: "en",
   })
 
@@ -15,8 +17,8 @@ export function GET() {
       title: post.title,
       description: post.description as string,
       date: post.date,
-      url: `https://portfolio-rocketburst.vercel.app/posts${post.slug}`,
-      guid: `https://portfolio-rocketburst.vercel.app/posts${post._id}`,
+      url: `${siteConfig.url}/posts${post.slug}`,
+      guid: `${siteConfig.url}/posts${post._id}`,
     })
   })
 

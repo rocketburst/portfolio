@@ -1,9 +1,18 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import { allPosts } from "@/.contentlayer/generated"
 
 import { projects } from "@/lib/projects"
 import { BlogPostCard } from "@/components/blog-post-card"
 import { ProjectCard } from "@/components/project-card"
+
+export const metadata: Metadata = {
+  title: "rocketburst · home",
+  description: "home of my personal website",
+  creator: "rocketburst",
+  robots: "index, follow",
+  viewport: { width: "device-width", initialScale: 1 },
+}
 
 export default function IndexPage() {
   const recentPosts = allPosts
