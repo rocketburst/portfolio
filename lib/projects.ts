@@ -9,7 +9,7 @@ export const projects = [
   {
     name: "Taskmaster",
     description: "A minimal all-in-one task manager that suits your needs.",
-    link: "https://github.com/rocketburst/seoai/",
+    link: "https://github.com/rocketburst/taskmaster/",
   },
   {
     name: "Portfolio",
