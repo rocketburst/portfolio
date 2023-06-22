@@ -24,8 +24,8 @@ export default function IndexPage() {
       <h1>Rayan Kazi</h1>
       <p className="leading-loose text-sm md:text-base md:leading-loose">
         Hello there 👋 My name is Rayan Kazi aka rocketburst. I&apos;m a 16 y/o
-        that identifies as a full stack web dev. I like building cool things
-        with cool tech and writing about it.
+        that claims to be a full stack web dev. I like building cool things with
+        cool tech and writing about it.
       </p>
 
       <p className="leading-loose text-sm md:text-base md:leading-loose">
