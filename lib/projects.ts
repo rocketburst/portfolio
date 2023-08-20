@@ -2,9 +2,9 @@ import { Project } from "@/types"
 
 export const projects = [
   {
-    name: "SeoAI",
-    description: "The best way to manage SEO on your blog.",
-    link: "https://github.com/rocketburst/seoai/",
+    name: "ConnectYou",
+    description: "Lightweight & clean version of LinkTree. It's Cool 😎.",
+    link: "https://connect-you.vercel.app/",
   },
   {
     name: "Taskmaster",
