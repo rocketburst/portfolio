@@ -2,7 +2,7 @@
 title: 'Creating your own Crypto with Thirdweb + Next JS'
 description: 'Learn how to create your own cryptocurrency using the power of Thirdweb and Next JS.'
 publishDate: '6 February 2022'
-tags: ['web 3', 'nextjs']
+tags: ['web 3', 'nextjs', 'tutorial']
 ---
 
 Cryptocurrency and Web3 has been gaining a lot of traction recently. We're going to hop on that train today, and you will be building your very first cryptocurrency!

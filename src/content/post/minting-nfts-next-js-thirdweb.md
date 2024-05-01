@@ -2,7 +2,7 @@
 title: 'Minting NFTS with Next JS and Thirdweb'
 description: 'Learn how to mint your own NFTS using Next JS and the Thirdweb SDK!'
 publishDate: '11 Mar 2022'
-tags: ['web 3', 'nextjs']
+tags: ['web 3', 'nextjs', 'tutorial']
 ---
 
 ## Minting your own NFTs using Next JS and Thirdweb

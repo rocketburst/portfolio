@@ -2,7 +2,7 @@
 title: 'Authentication using Metamask Wallets in Next JS'
 description: 'Learn how to implement authentication in your Web 3.0 app with your Metamask wallet using Next JS and Moralis'
 publishDate: '18 Jan 2022'
-tags: ['web 3', 'nextjs']
+tags: ['web 3', 'nextjs', 'tutorial']
 ---
 
 ## Authentication using Metamask Wallets in Next JS

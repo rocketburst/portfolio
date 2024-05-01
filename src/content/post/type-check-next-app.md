@@ -2,7 +2,7 @@
 title: 'Type Checking your Next JS App'
 description: 'Learn how to use Next JS and Typescript togethere to improve your DX'
 publishDate: '22 Jan 2022'
-tag: ['nextjs', 'typescript']
+tag: ['nextjs', 'typescript', 'tutorial']
 ---
 
 ## Type Checking your Next JS App

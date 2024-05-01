@@ -2,6 +2,7 @@
 title: 'Learn Next JS Server Actions with Books!'
 description: 'Build a mini bookshelf app to learn the new Next JS 13.4 Server actions feature, along with the new Vercel PostgreSQL serverless database using TypeScript.'
 publishDate: '7 May 2023'
+tags: ['nextjs', 'tutorial']
 ---
 
 Vercel released Next JS 13.4 on 3 days ago (at the time of writing this article), and with that release came two huge announcements: the **stability of the app router** and a new alpha feature called **server actions**.
