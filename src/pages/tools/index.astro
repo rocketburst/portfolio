@@ -3,34 +3,34 @@ import PageLayout from '@/layouts/BaseLayout.astro'
 import ToolSection from '@/components/ToolSection.astro'
 import Button from '@/components/Button.astro'
 
-const DESIGN = [
-	{
-		name: 'Figma',
-		description: 'Design Tool',
-		href: 'https://www.figma.com/',
-		iconPath: 'figma',
-		iconBgColour: '#000001'
-	}
-]
+// const DESIGN = [
+// 	{
+// 		name: 'Figma',
+// 		description: 'Design Tool',
+// 		href: 'https://www.figma.com/',
+// 		iconPath: 'figma',
+// 		iconBgColour: '#000001'
+// 	}
+// ]
 
 const PRODUCTIVITY = [
 	{
-		name: 'Arc',
+		name: 'Chrome',
 		description: 'Browser',
 		href: 'https://arc.net/',
-		iconPath: 'arc',
+		iconPath: 'chrome',
 		iconBgColour: '#414350'
 	},
 	{
 		name: 'Notion',
-		description: 'Note Taking',
+		description: 'Task Management',
 		href: 'https://www.notion.so/product',
 		iconPath: 'notion',
 		iconBgColour: '#EFEFEE'
 	},
 	{
 		name: 'Obsidian',
-		description: 'Long-form Writing',
+		description: 'Note-taking',
 		href: 'https://obsidian.md/',
 		iconPath: 'obsidian',
 		iconBgColour: '#7A3EE8'
@@ -79,7 +79,6 @@ const DEVELOPMENT = [
 				<p>Tools and software I use daily</p>
 			</div>
 
-			<ToolSection title='Design' tools={DESIGN} />
 			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
 			<ToolSection title='Development' tools={DEVELOPMENT} />
 		</div>
