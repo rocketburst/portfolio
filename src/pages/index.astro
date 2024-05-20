@@ -14,7 +14,6 @@ import { getAllPosts, sortMDByDate } from '@/utils'
 
 const frontend = ['HTML', 'CSS', 'JS/TS', 'React JS', 'Next JS', 'Tailwind']
 const backend = ['Node JS', 'Python']
-const dataScience = ['NumPy', 'Matplotlib', 'Pandas', 'Seaborn', 'TensorFlow']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -71,9 +70,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 		<Section title='About'>
 			<p class='text-muted-foreground'>
 				I'm a rising high school senior with a passion to build amazing things and write about them!
-				I'm currently pursuing <a href='https://www.freecodecamp.org/learn' class='underline'
-					>FCC certifcations for ML/AI</a
-				> and looking for internship positions for computer science and medical related fields.
+				I'm probably working on a a side project right now and looking for internship positions for
+				computer science and medical related fields.
 			</p>
 		</Section>
 		{
@@ -94,7 +92,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			<Card
 				heading='BASIS Ahwatukee'
 				subheading='Graduating with High Honors'
-				date='Aug 2021 - May 2025'
+				date='May 2025'
 				altText='Graduating from BASIS Ahwatukee with High Honors in May 2025'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
@@ -116,10 +114,26 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			/> -->
 		</Section>
 
+		<Section title='Work Experience'>
+			<Card
+				heading='Sitepoint'
+				subheading='Technical Writer'
+				date='May 2023 - Aug 2023'
+				altText='Worked as technical writer at Sitepoint'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Enhanced SitePoint's online technical library by authoring high-quality articles on
+						Next.js and JavaScript
+					</li>
+				</ul>
+			</Card>
+		</Section>
+
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
-					href='/blog/salary-predictor-project'
+					href='https://github.com/rocketburst/salary-predictor'
 					heading='Salary Predictor'
 					subheading='Used Python and Scikit-learn to predict employee salaries.'
 					imagePath='/src/assets/salary-predictor-img.jpg'
@@ -179,45 +193,20 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			/>
 		</Section>
 
-		<Section title='Work Experience'>
+		<Section title='Certifications'>
 			<Card
-				heading='Sitepoint'
-				subheading='Technical Writer'
-				date='June 2023 - Aug 2023'
-				altText='Worked as technical writer at Sitepoint'
-			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Wrote articles on JavaScript, Next JS, and other web development technology to promote
-						platform
-					</li>
-				</ul>
-			</Card>
+				as='a'
+				heading='JavaScript Algorithms and Data Structures Certfication'
+				subheading='From FreeCodeCamp, representing over 300 hours worth of coursework'
+				date='May 2024'
+				altText='FreeCodeCamp JavaScript Algorithms and Data Structures Certification'
+				href='https://www.freecodecamp.org/certification/rocketburst/javascript-algorithms-and-data-structures-v8'
+			/>
 		</Section>
-
-		<!-- <Section title='Certifications'>
-			<Card
-				as='a'
-				heading='Lorem ipsum, dolor sit amet consectetur adipisicing.'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.'
-				date='Mar 2024 - Mar 2024'
-				altText='Lorem, ipsum dolor sit'
-				href='https://www.google.com'
-			/>
-			<Card
-				as='a'
-				heading='Lorem ipsum, dolor sit amet'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta.'
-				date='Mar 2029 - Mar 2032'
-				altText='Lorem, ipsum dolor sit'
-				href='https://www.google.com'
-			/>
-		</Section> -->
 
 		<Section title='Skills'>
 			<SkillLayout title='Frontend' skills={frontend} />
 			<SkillLayout title='Backend' skills={backend} />
-			<SkillLayout title='ML/AI*' skills={dataScience} />
 		</Section>
 	</div>
 </PageLayout>
