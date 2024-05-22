@@ -5,9 +5,9 @@ publishDate: '08 June 2023'
 tags: ['typescript', 'tutorial', 'nextjs']
 ---
 
-> Read the article on SitePoint [here](https://www.sitepoint.com/next-js-error-handling-app-router/)!
+Please read the article on SitePoint [here](https://www.sitepoint.com/next-js-error-handling-app-router/)!
 
-## Mastering Next.js Error Handling with the App Router
+<!-- ## Mastering Next.js Error Handling with the App Router
 
 Error handling is a key aspect of developing any web application, and Next JS helped developers with that experience through custom error pages like 404 and 500 pages.
 
@@ -171,4 +171,4 @@ Although many developers view implementing error handling as a hassle, it is a v
 
 Next.js makes it incredibly simple to do this with the help of the App Router and the `error.tsx` file convention.
 
-Feel free to consult the Next.js docs on error handling linked [here](https://nextjs.org/docs/app/building-your-application/routing/error-handling) to learn more about error handling, and [here](https://github.com/rocketburst/error-handling-example/tree/finished) is the link to the finished code.
+Feel free to consult the Next.js docs on error handling linked [here](https://nextjs.org/docs/app/building-your-application/routing/error-handling) to learn more about error handling, and [here](https://github.com/rocketburst/error-handling-example/tree/finished) is the link to the finished code. -->

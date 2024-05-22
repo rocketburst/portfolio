@@ -5,9 +5,9 @@ publishDate: '01 August 2023'
 tags: ['typescript', 'tutorial', 'react']
 ---
 
-> Read the article on SitePoint [here](https://www.sitepoint.com/react-email-resend/)!
+Please read the article on SitePoint [here](https://www.sitepoint.com/react-email-resend/)!
 
-## Sending Emails with React Using Resend
+<!-- ## Sending Emails with React Using Resend
 
 Up until now, creating and sending emails in React was extremely difficult, as there was no proper documentation on how to create email templates with hacky `table` tag tricks or send emails.
 
@@ -242,4 +242,4 @@ And with that, we have successfully sent the email with Resend!
 
 Much of the headache with creating and sending emails in React was solved with React Email and Resend. It's a 2-hit combo that provides an amazing developer experience and gets the job done extremely quickly.
 
-Consult the docs for [React Email](https://react.email/docs/introduction) and [Resend](https://resend.com/docs/introduction) if you want to learn more about these frameworks. React Email also provides many [example templates](https://demo.react.email/preview/vercel-invite-user) for you to base your emails off. You can find the finished source code [here](https://github.com/rocketburst/react-email-example).
+Consult the docs for [React Email](https://react.email/docs/introduction) and [Resend](https://resend.com/docs/introduction) if you want to learn more about these frameworks. React Email also provides many [example templates](https://demo.react.email/preview/vercel-invite-user) for you to base your emails off. You can find the finished source code [here](https://github.com/rocketburst/react-email-example). -->
