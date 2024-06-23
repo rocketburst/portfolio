@@ -123,8 +123,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Enhanced SitePoint's online technical library by authoring high-quality articles on
-						Next.js and JavaScript
+						Wrote articles on JavaScript, Next JS, and other web development technology read by over
+						10,000 developers
 					</li>
 				</ul>
 			</Card>
@@ -133,20 +133,20 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
+					href='https://github.com/rocketburst/immerse'
+					heading='Immerse'
+					subheading='A chrome extension to help students remove their distractions'
+					imagePath='/src/assets/seoai-img.jpg'
+					altText='SeoAI'
+					class='w-full sm:w-1/2'
+				/>
+
+				<ProjectCard
 					href='https://github.com/rocketburst/salary-predictor'
 					heading='Salary Predictor'
 					subheading='Used Python and Scikit-learn to predict employee salaries.'
 					imagePath='/src/assets/salary-predictor-img.jpg'
 					altText='Salary Predictor'
-					class='w-full sm:w-1/2'
-				/>
-
-				<ProjectCard
-					as='div'
-					heading='SeoAI'
-					subheading='Create AI generated SEO fields from blog post and vice versa.'
-					imagePath='/src/assets/seoai-img.jpg'
-					altText='SeoAI'
 					class='w-full sm:w-1/2'
 				/>
 			</div>
@@ -177,11 +177,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				altText='Participated in Mock Trial since 11th grade'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Acting as lawyer and witness in a courtroom, learning proper court procedures.
-
-						<li>Competed at the 2024 AZ State Competition</li>
-					</li>
+					<li>Acting as lawyer and witness in a courtroom, learning proper court procedures.</li>
+					<li>Competed at the 2024 AZ State Competition</li>
 				</ul>
 			</Card>
 
@@ -190,7 +187,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				subheading='Member in Good Standing'
 				date='Aug 2022 - Present'
 				altText='Lorem, ipsum dolor sit'
-			/>
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Completed 15 hours of service per semester, volunteering at many school and district
+						events.
+					</li>
+				</ul>
+			</Card>
 		</Section>
 
 		<Section title='Certifications'>
