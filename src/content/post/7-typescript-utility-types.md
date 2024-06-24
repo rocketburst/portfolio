@@ -5,8 +5,6 @@ publishDate: '30 June 2022'
 tags: ['typescript', 'tutorial']
 ---
 
-## 7 TypeScript Utility Types That Will Make Your Life Easier
-
 TypeScript has arguably been the greatest thing that I have ever come across as a developer because of the way it revolutionized my experience as a developer. I want to help make using TypeScript even better for you by showing you how to use 7 built in utility types that will make your life much easier.
 
 I will be using the following interface throughout the article to demonstrate the various types:
