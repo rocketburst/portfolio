@@ -1,5 +1,5 @@
 ---
-title: 'Visualizing Linked Lists and Their Operations - A Comprehensive Guide'
+title: 'Visualizing Linked Lists and Their Operations'
 description: 'Explore and visualize linked lists: singly and doubly. Understand their operations, implementations, and time complexities with Python examples.'
 publishDate: '4 July 2024'
 tags: ['python', 'tutorial', 'ds-algs']
